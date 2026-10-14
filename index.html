@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo Centrado</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  
+  <!-- Script JS (defer para cargar después del HTML) -->
+  <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
-    <h1 style="font-size: 2rem;"> Hola Mundo </h1>
+
+  <!-- Botón superior de tema -->
+  <header class="header-actions">
+    <button id="themeToggleBtn" class="btn-icon" aria-label="Cambiar tema">
+      🌙 <span id="themeLabel">Modo Claro</span>
+    </button>
+  </header>
+
+  <!-- Contenido principal centrado -->
+  <main class="container">
+    <div class="card">
+      <span class="badge">Ejemplo de Hola Mundo</span>
+      
+      <!-- Título principal -->
+      <h1 id="greeting">¡Hola Mundo!</h1>
+      <p class="subtitle">Bienvenido a tu sitio web moderno y responsivo.</p>
+
+      <!-- Panel de control de tamaño de texto -->
+      <div class="controls">
+        <label for="fontSizeControl">Tamaño de letra:</label>
+        <div class="button-group">
+          <button id="btnDecrease" class="btn-control">-</button>
+          <span id="sizeValue">1.0rem (16px)</span>
+          <button id="btnIncrease" class="btn-control">+</button>
+          <button id="btnReset" class="btn-secondary">Restablecer</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 - Creado con HTML, CSS y JS</p>
+  </footer>
+
 </body>
 </html>
